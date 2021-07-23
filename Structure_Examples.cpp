@@ -76,9 +76,56 @@ void stringStreamTest() {
     cout << ((number2 == covertedNumber1) ? "True" : "False") << endl;
 }
 
-int main() {
+//If, else, and else if syntax
+void ifElse() {
+    int x = 20;
+    int y = 20;
 
-    stringStreamTest();
-    return 0;
+    if (x > y) {
+        cout << "X is greater than Y!";
+    } else if (x < y) {
+        cout << "Y is greater than X!";
+    } else {
+        cout << "Y is equal to X!";
+    }
 }
 
+//While loop example
+void whileLoop() {
+    int timer = 20;
+    
+    cout << "This is a while loop:" << endl;
+
+    while (timer > 0) {
+        cout << timer << endl;
+        --timer;
+    }
+
+    cout << "This is a do-while loop:" << endl;
+
+    timer = 20;
+
+    do {
+        cout << timer << endl;
+        --timer;
+    } while (timer > 20);
+}
+
+//For loop example using multiple initialization variables
+void forLoop() {
+    for (int timer = 20, reverseTimer = 0; timer > -1; timer--, reverseTimer++) {
+        if (timer > 9) {
+            cout << "Timer: " << timer  << "     " << "Inverse Timer: " << reverseTimer << endl;
+        } else {
+            cout << "Timer: " << timer  << "      " << "Inverse Timer: " << reverseTimer << endl;
+        }  
+    }
+}
+
+//Basic iteration using a range-based for loop
+
+int main() {
+
+    forLoop();
+    return 0;
+}
