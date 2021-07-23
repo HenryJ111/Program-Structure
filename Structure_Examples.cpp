@@ -124,16 +124,46 @@ void forLoop() {
 
 //Basic iteration using a range-based for loop
 void forIteration() {
-    string str = "Hello!";
+    string str = "Hello! is this working?";
 
-    for (int k = str.length(); k > 0; --k) {
-        cout << str[k - 1] << endl;
+    for (int k = 0; k < str.length(); ++k) {
+        cout << str[k] << endl;
     }
 
 }
 
+//Switch function
+void switchFunction() {
+    int x = 3;
+
+    switch (x) {
+        case 1:
+            cout << "x is one";
+            break;
+        case 2:
+            cout << "x is two";
+            break;
+        case 3:
+            cout << "x is three";
+            break;
+        default:
+            cout << "value of x unknown";
+    }
+}
+
+//Function with inputs
+void inputFunction(int number1, int number2, string string1, string string2) {
+    cout << "Your random sentence is: " << number1 << " " << string1 << " " << number2 << " " << string2 << endl;
+}
+
+//Application of return functions
+int  multiplyNumbers(int number1, int number2) {
+    return number1 * number2;
+}
+
+
 int main() {
 
-    forIteration();
+    cout << multiplyNumbers(5,5);
     return 0;
 }
