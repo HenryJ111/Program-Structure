@@ -161,9 +161,19 @@ int  multiplyNumbers(int number1, int number2) {
     return number1 * number2;
 }
 
+//Simplified print function
+void print(string text) {
+    cout << text << endl;
+}
+
+//Modifying called arguments
+void multiplier(int& a, int& b) {
+    a *= 2;
+    b *= 2;
+}
 
 int main() {
 
-    cout << multiplyNumbers(5,5);
+    switchFunction();
     return 0;
 }
