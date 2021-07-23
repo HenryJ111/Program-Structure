@@ -123,9 +123,17 @@ void forLoop() {
 }
 
 //Basic iteration using a range-based for loop
+void forIteration() {
+    string str = "Hello!";
+
+    for (int k = str.length(); k > 0; --k) {
+        cout << str[k - 1] << endl;
+    }
+
+}
 
 int main() {
 
-    forLoop();
+    forIteration();
     return 0;
 }
